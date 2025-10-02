@@ -4,7 +4,7 @@ import {View, Image, StyleSheet, Text } from "react-native";
 export default () =>{
     return(
        <View style={styles.container}>
-            <View style={{flexWrap:"wrap"}}>
+            <View style={{flexWrap:"wrap", justifyContent:"center", alignItems:"center"}}>
             <View style={styles.viewimage}>
                 <Text style={styles.text}>Luffy</Text>
                 <Image source={require("../assets/luffy.jpg")} style={styles.img}/>
@@ -30,8 +30,6 @@ export default () =>{
                 <Image source={require("../assets/jimbe.jpeg")} style={styles.img}/>
             </View>
             </View>
-
-            <Image source={require("../assets/one_piece.png")} style={styles.logoImg}/>
        </View>
     )
 }
@@ -42,7 +40,7 @@ const styles = StyleSheet.create({
         backgroundColor:"#ebc253ff",
     },
     viewimage:{
-       margin:10 
+       margin:10
     },
     img:{
         height:200,
